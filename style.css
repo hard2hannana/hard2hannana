@@ -1,0 +1,427 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+body {
+  background-image: url(./my-pics/site-bg.webp);
+  margin: 0;
+  font-family: "Merriweather Sans", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.title {
+  padding: .5em 1em 0;
+}
+.shiny-text {
+  text-align: center;
+  font-size: 5.5rem;
+  font-style: italic;
+  font-family: "Story Script", sans-serif;
+  background: linear-gradient(120deg,
+      #eee 10%,
+      /* light */
+      #ccc 30%,
+      /* mid-tone */
+      #fff 45%,
+      /* highlight */
+      #aaa 55%,
+      /* mid-tone */
+      #fff 70%,
+      /* strong highlight */
+      #888 85%
+      /* dark */
+    );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.blue-text {
+  background: linear-gradient(90deg, #415b8c, #8aa6d5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grid-wrapper{
+  grid-template-columns: 1fr;
+  width: 100%;
+  text-align: center;
+  background-image: url(./my-pics/laptop.jpg);
+  background-size: cover;
+  border: 35px solid #111;
+  gap: 2em;
+  margin: 0 auto;
+}
+.top-txt {
+  font-family: "Story Script", sans-serif;
+  color: #171a23;
+  padding: 2em 0;
+  
+}
+.title {
+  font-family: "Story Script", sans-serif;
+  font-size: 3rem;
+  padding: .5em 0;
+  margin: 0;
+}
+.home {
+  border-bottom: 5px solid #ddd;
+  }
+
+.about-nav {
+  padding: 1em 0 2em;
+}
+.contact-nav {
+  padding: .5em 0;
+}
+.home-img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+  padding: .5em 0 0 0;
+}
+ul li {
+  margin-bottom: .4em;
+}
+ul li:last-child {
+  margin-bottom: 0;
+}
+.navbar {
+  background: #111;
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 5px solid #ddd;
+}
+.navbar a {
+  font-style: italic;
+  color: #fff;
+  text-decoration: none;
+ 
+}
+a:hover{
+  color: #8f3838;
+  cursor: pointer;
+}
+.gallery-hdr {
+  font-family: "Italiana", sans-serif;
+  font-size: 4.5rem;
+  opacity: .8;
+  padding: 1em 0 .5em;
+  text-align: center;
+}
+
+.scissors {
+ width: 2.5em;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ padding: .5em 0 1em 0;
+}
+.gallery {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  padding: 2rem;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2/3;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.gallery img:hover {
+  transform: scale(1.10);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.about-content {
+  background: #3b4258;
+  font-family: "Story Script", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  border: 35px solid #111;
+}
+.about-img {
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 100%;  
+  padding-bottom: 1em;
+}
+.about-title {
+  color: #171a23;
+  font-size: 2rem;
+  padding-top: 1em;
+  margin-bottom: .5em;
+}
+.about-text {
+  color: #171a23;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 1em;
+  font-size: 1.5rem;
+  padding-bottom: 1em;
+}
+
+/* Close button */
+#close-contact {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Make form fill more elegantly on mobile */
+.contact-form {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 380px;
+}
+
+.contact-form input,
+.contact-form button {
+  width: 100%;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  padding: 12px;
+}
+.contact-form button {
+  font-size: 2rem;
+}
+.contact-title {
+  padding: 2rem 0 1rem 0;
+  font-size: 3rem;
+}
+.contact-phone {
+  font-size: 1.5rem;
+}
+.contact-email {
+  font-size: 1.5rem;
+  padding-bottom: 4em;
+}
+.label-txt {
+  font-family: "Story Script", sans-serif;
+  padding: 8px 0;
+  margin: 0;
+}
+input {
+  background: transparent;
+  color: #333;
+  font-size: 1.1rem;
+  height: 2rem;
+  border: 0;
+  border-bottom: 2px solid #333;
+}
+button {
+  background: transparent;
+  font-size: 6rem;
+  margin-top: .5em;
+  padding: .5em 0;
+  color: #333;
+  border: 0;
+ 
+  
+}
+.footer-format {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer {
+  background: #111;
+  border-top: 5px solid #ddd;
+  color: #eee;
+  padding: 1em;
+}
+.footer p,
+.footer a,
+.footer h2 {
+  font-size: 1rem;
+  padding: .5em;
+}
+.footer h2:last-child{
+  margin-bottom: 1em;
+}
+.footer a {
+  color: #eee;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .home {
+    padding-bottom: 2em;
+  }
+  .navbar {
+    padding: 1.5em 0;
+    border-bottom: 5px solid #ddd;
+    margin-bottom: 2em;
+  }
+  .navbar ul{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .navbar li {
+    font-size: 2rem;
+    padding: .8em 0 1.8;
+    margin: 0 1em;
+  }
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1400px;
+    width: 85%;
+    border: 7px solid #ddd;
+    margin: 0 auto
+  }
+  .top-txt {
+    padding-bottom: 2em;
+    font-size: 2rem;
+    color: #171a23;
+    opacity: 1;
+  }
+  .title {
+    font-size: 5rem;
+  }
+  .about-title{
+    font-size: 3rem;
+  }
+  .about-text {
+    font-size: 2.5rem;
+  }
+  .shiny-text {
+    letter-spacing: .2em;
+  }
+  .home-img {
+    /* border: solid 2px;
+    border-bottom-color: #0d0549;
+    border-left-color: #0d0549;
+    border-right-color: #0d0549;
+    border-top-color: #0d0549; */
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .picture-frame {
+    background-color: #2b2d46;
+    background-color: rgba(0, 0, 0, 0.755);
+      border: solid 5vmin #eee;
+      border-bottom-color: #fff;
+      border-left-color: #eee;
+      border-radius: 2px;
+      border-right-color: #eee;
+      border-top-color: #ddd;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25) inset, 0 5px 10px 5px rgba(0, 0, 0, .25);
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 5vh 5vw;
+    padding: 2vmin;
+    position: relative;
+    text-align: center;
+  
+    &:before {
+      border-radius: 2px;
+      bottom: -2vmin;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25) inset;
+      content: "";
+      left: -2vmin;
+      position: absolute;
+      right: -2vmin;
+      top: -2vmin;
+    }
+  
+    &:after {
+      border-radius: 2px;
+      bottom: -2.5vmin;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
+      content: "";
+      left: -2.5vmin;
+      position: absolute;
+      right: -2.5vmin;
+      top: -2.5vmin;
+    }
+  } 
+  .about-content {
+    text-align: start;
+    width: 85%;
+    padding: 0 3em;
+    margin: 2em auto;
+    border: 7px solid #ddd;
+  } 
+  .about-content::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .about-img {
+    float: right;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 100%;
+    shape-outside: circle(100%);
+  }
+    .bottom-txt {
+      font-family: "Story Script", sans-serif;
+      text-align: center;
+      font-size: 3rem;
+      color: #fff;
+      opacity: .8;
+      margin: 1rem 0 2rem;
+      transform: translateX(-50px);
+    }
+    .label-txt {
+      padding: 2px 0;
+    }
+    .contact-title,
+    .contact-form button {
+      font-size: 1.5rem;
+    }
+    .contact-phone,
+    .contact-form input,
+    .label-txt {
+      font-size: 1rem;
+    }
+    .contact-email {
+      font-size: 1rem;
+      padding-bottom: 1em;
+    }
+    .logo-wrap {
+      display: inline-flex;
+      align-items: center;
+      margin: 0 2rem;
+    }
+    .logo {
+      height: 2em;
+      vertical-align: middle;
+      transform: translateY(20px);
+    }
+    .footer-format {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+      padding: 1.5em;
+      text-align: start;
+      width: 80%;
+      margin: 0 auto;
+    }
+}
+
